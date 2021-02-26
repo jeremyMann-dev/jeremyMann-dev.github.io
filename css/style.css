@@ -1,18 +1,22 @@
 body {
     background-color: cadetblue;
 }
+
 title {
     color: black;
     text-align: center;
 }
+
 h1 {
     color: orange;
     text-align: center;
 }
+
 p {
     color: black;
     text-align: center;
 }
+
 a {
     color: black;
 }
