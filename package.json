@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:tailwind": "tailwind build tailwindTest/styles.css -o tailwindTest/build/styles.css"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,5 @@
   "bugs": {
     "url": "https://github.com/jeremyMann-dev/jeremyMann-dev.github.io/issues"
   },
-  "homepage": "https://github.com/jeremyMann-dev/jeremyMann-dev.github.io#readme",
-  "build": "postcss tailwindTest/styles.css -o tailwindTest/build/styles.css"
+  "homepage": "https://github.com/jeremyMann-dev/jeremyMann-dev.github.io#readme"
 }
