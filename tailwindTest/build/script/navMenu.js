@@ -1,6 +1,8 @@
-const btn = document.querySelector(".mobile-menu-button");
+// grab everything we need
+const mobileMenuButton = document.querySelector(".mobile-menu-button");
 const sidebar = document.querySelector(".sidebar");
 
-btn.addEventListener("click", () => {
-    sidebar.classList.toggle("-translate-x-full");
+// add our event listener for the click
+mobileMenuButton.addEventListener("click", () => {
+  sidebar.classList.toggle("-translate-x-full");
 });
