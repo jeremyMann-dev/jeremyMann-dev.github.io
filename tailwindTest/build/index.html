@@ -11,9 +11,9 @@
 <!--background-->
 <div class="relative min-h-screen md:flex">
     <!--mobile menu bar-->
-    <div class="md:hidden bg-gray-900 text-gray-200 flex justify-between">
+    <div class="md:hidden sticky bg-gray-900 text-gray-200 flex justify-between">
         <!--mobile menu button-->
-        <button id="mobile-menu-button" class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-600">
+        <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-600">
             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
             </svg>
@@ -26,18 +26,25 @@
         </div>
     </div>
     <!--sidebar-->
-    <div id="sidebar" class="sidebar bg-blue-800 text-blue-200 w-64 space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+    <div class="sidebar bg-blue-800 text-blue-200 w-64 space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
         <!--logo-->
         <div>
-            <a href="#" class="text-white flex items-center space-x-2">
+            <a href="#" class="text-white flex items-center space-x-2 justify-between md:justify-start">
                 <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
                 </svg>
-                <span class="text-2xl font-extrabold">Jeremy Mann</span>
+                <!--menu name-->
+                <span class="text-xl font-extrabold">Jeremy Mann</span>
+                <!--close menu button-->
+                <button class="mobile-close-button md:hidden focus:outline-none focus:bg-blue-600">
+                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
             </a>
         </div>
         <!--nav-->
-        <nav class="">
+        <nav>
             <a href="#" class="block rounded py-2.5 px-4 transition duration-50 hover:bg-blue-600 hover:text-white">About Me</a>
             <a href="#" class="block rounded py-2.5 px-4 transition duration-50 hover:bg-blue-600 hover:text-white">Photography</a>
             <a href="#" class="block rounded py-2.5 px-4 transition duration-50 hover:bg-blue-600 hover:text-white">Leatherwork</a>
@@ -46,6 +53,7 @@
             <a href="#" class="block rounded py-2.5 px-4 transition duration-50 hover:bg-blue-600 hover:text-white">Contact</a>
         </nav>
     </div>
+
     <!--content-->
     <div class="flex-1 p-10 text-2xl font-bold">
         Content goes here
