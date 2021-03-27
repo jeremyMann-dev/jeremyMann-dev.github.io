@@ -1,0 +1,24 @@
+{
+  "name": "jeremyMann-dev.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremyMann-dev/jeremyMann-dev.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremyMann-dev/jeremyMann-dev.github.io/issues"
+  },
+  "homepage": "https://github.com/jeremyMann-dev/jeremyMann-dev.github.io#readme",
+  "build": "postcss tailwindTest/styles.css -o tailwindTest/build/styles.css"
+}
