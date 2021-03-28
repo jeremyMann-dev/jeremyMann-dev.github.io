@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:tailwind": "tailwind build tailwindTest/styles.css -o tailwindTest/build/styles.css",
-    "build:tailwindENV": "NODE_ENV=production tailwind build tailwindTest/styles.css -o tailwindTest/build/styles.css"
+    "build:tailwindENV": "tailwind build tailwindTest/styles.css -o tailwindTest/build/styles.css"
   },
   "repository": {
     "type": "git",
