@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:tailwind": "tailwind build tailwindTest/styles.css -o tailwindTest/build/styles.css",
-    "build:tailwindENV": "tailwind build tailwindTest/styles.css -o tailwindTest/build/styles.css"
+    "build:tailwind": "tailwind build docs/styles.css -o docs/styles.css",
+    "build:tailwindENV": "tailwind build docs/styles.css -o docs/styles.css"
   },
   "repository": {
     "type": "git",
